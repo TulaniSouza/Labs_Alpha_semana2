@@ -1,0 +1,39 @@
+:root {
+  --bg: #fdfdfd;
+  --primary: #2d3436;
+  --accent: #0984e3;
+  --text: #2d3436;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  max-width: 500px;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+h2 { border-bottom: 2px solid var(--accent); margin-bottom: 1rem; }
+form { display: flex; flex-direction: column; gap: 1rem; }
+input { padding: 0.8rem; border: 1px solid #ddd; border-radius: 6px; }
+button { background: var(--accent); color: white; border: none; padding: 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; }
+
+.fade-in { animation: fadeIn 0.5s ease-in; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
