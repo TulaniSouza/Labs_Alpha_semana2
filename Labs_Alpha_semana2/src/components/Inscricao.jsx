@@ -6,7 +6,14 @@ export default function Inscricao({ setEtapa, setDados }) {
     
     // Aqui a Isabela entrará com as validações automatizadas
     if (nome && email) {
-      setDados({ nome, email });
+      setDados((prev) => ({
+        ...prev,
+        nome,
+        email,
+        pagamentoStatus: 'pendente',
+        transacaoId: null,
+        valor: 50,
+      }));
       setEtapa(2); // Avança para Pagamento (Whimsical Fluxo 1)
     }
   };

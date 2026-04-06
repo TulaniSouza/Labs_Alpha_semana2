@@ -6,7 +6,13 @@ import Certificado from './components/Certificado';
 
 function App() {
   const [etapa, setEtapa] = useState(1);
-  const [dadosUsuario, setDadosUsuario] = useState({ nome: '', email: '' });
+  const [dadosUsuario, setDadosUsuario] = useState({
+    nome: '',
+    email: '',
+    pagamentoStatus: 'pendente',
+    transacaoId: null,
+    valor: 50,
+  });
 
   return (
     <section className="app-wrapper">
@@ -25,13 +31,16 @@ function App() {
         {etapa === 2 && (
           <Pagamento 
             setEtapa={setEtapa} 
-            nome={dadosUsuario.nome} 
+            dados={dadosUsuario}
+            setDados={setDadosUsuario}
           />
         )}
 
         {etapa === 3 && (
           <Certificado 
-            nome={dadosUsuario.nome} 
+            nome={dadosUsuario.nome}
+            valor={dadosUsuario.valor}
+            transacaoId={dadosUsuario.transacaoId}
           />
         )}
       </main>
