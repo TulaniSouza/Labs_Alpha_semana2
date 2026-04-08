@@ -12,6 +12,20 @@ A arquitetura foi desenhada no Whimsical para garantir a integridade dos process
 * CSS Moderno (Mobile-First)
 * Acessibilidade (WCAG Compliant)
 
+* ## Matriz de Permissões (RBAC)
+
+Perfis:Admin, Organizador, Participante
+
+Estrutura da matriz:
+Funcionalidade / Rota	Admin	Organizador	Participante
+Criar evento	✅	✅	❌
+Editar evento	✅	✅	❌
+Visualizar eventos	✅	✅	✅
+Comprar ingresso	❌	❌	✅
+Acessar área de pagamento	❌	❌	✅
+Ver relatórios	✅	✅	❌
+Gerenciar usuários	✅	❌	❌
+
 ## Equipe e Funções
 * **Tulani:** Arquitetura, Liderança Técnica e Segurança.
 * **Isabela:** Requisitos, RNFs e Matriz de Permissões.
