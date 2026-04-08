@@ -14,35 +14,12 @@ A arquitetura foi desenhada no Whimsical para garantir a integridade dos process
 
 * ## Matriz de Permissões (RBAC)
 
+Perfis: Adm, Organizador, Participante
 A seguir, estão definidas as permissões de acesso com base nos perfis do sistema:
 
-👤 Admin
-Pode criar eventos
-Pode editar eventos
-Pode visualizar todos os eventos
-Pode visualizar relatórios
-Pode gerenciar usuários
-Não realiza compra de ingressos
-Não acessa a área de pagamento como usuário final
-🧑‍💼 Organizador
-Pode criar eventos
-Pode editar eventos próprios
-Pode visualizar eventos
-Pode visualizar relatórios dos seus eventos
-Não pode gerenciar usuários
-Não realiza compra de ingressos
-Não acessa a área de pagamento como usuário final
-🎟️ Participante
-Pode visualizar eventos
-Pode realizar compra de ingressos
-Pode acessar a área de pagamento
-Não pode criar ou editar eventos
-Não pode visualizar relatórios
-Não pode gerenciar usuários
-🔒 Regras de Acesso às Rotas
-Rotas administrativas (/admin) são restritas ao perfil Admin
-Rotas do organizador (/dashboard-organizador) são acessíveis por Organizador e Admin
-Rotas de checkout (/checkout) são acessíveis apenas por Participantes autenticados
+<img width="783" height="393" alt="image" src="https://github.com/user-attachments/assets/74f69a79-e768-4ea8-8cd7-3a13fd21da0b" />
+
+
 
 ## Equipe e Funções
 * **Tulani:** Arquitetura, Liderança Técnica e Segurança.
