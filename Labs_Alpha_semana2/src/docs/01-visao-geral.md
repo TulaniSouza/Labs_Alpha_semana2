@@ -1,0 +1,1 @@
+O Labs Alpha é um sistema de gestão de eventos focado na experiência do usuário e segurança de dados. O projeto resolve a automação de inscrições, validação de pagamentos simulados e emissão de certificados.

@@ -20,6 +20,13 @@ A seguir, estão definidas as permissões de acesso com base nos perfis do siste
 <img width="783" height="393" alt="image" src="https://github.com/user-attachments/assets/74f69a79-e768-4ea8-8cd7-3a13fd21da0b" />
 
 
+## 📚 Documentação Técnica
+- [01 - Visão Geral](./docs/01-visao-geral.md)
+- [02 - Requisitos](./docs/02-requisitos.md)
+- [03 - Fluxos de Processo](./docs/03-fluxos.md)
+- [04 - Matriz de Permissões (RBAC)](./docs/04-permissoes.md)
+- [05 - Análise de Riscos e Segurança](./docs/05-riscos.md)
+
 
 ## Equipe e Funções
 * **Tulani:** Arquitetura, Liderança Técnica e Segurança.
