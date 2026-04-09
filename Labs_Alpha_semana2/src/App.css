@@ -1,54 +1,130 @@
+/* Importando uma fonte mais moderna e limpa */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 :root {
-  --bg: #fdfdfd;
-  --primary: #2d3436;
-  --accent: #0984e3;
-  --text: #2d3436;
+  --primary-blue: #004aad; /* Azul da logo */
+  --secondary-blue: #007bff;
+  --bg-color: #f4f7f9;
+  --text-dark: #1a1a1a;
+  --white: #ffffff;
+  --error: #e74c3c;
+  --success: #2ecc71;
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--text-dark);
 }
 
 .app-wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--bg);
-}
-
-header {
-  background: var(--primary);
-  color: white;
-  padding: 1.5rem;
+  background: var(--white);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 450px;
   text-align: center;
 }
 
-main {
-  flex: 1;
-  max-width: 500px;
-  width: 90%;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+header h1 {
+  font-size: 1.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--bg-color);
+  padding-bottom: 10px;
 }
 
-h2 { border-bottom: 2px solid var(--accent); margin-bottom: 1rem; }
-form { display: flex; flex-direction: column; gap: 1rem; }
-input { padding: 0.8rem; border: 1px solid #ddd; border-radius: 6px; }
-button { background: var(--accent); color: white; border: none; padding: 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; }
-button:disabled { opacity: 0.6; cursor: not-allowed; }
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d9e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 4px rgba(0, 74, 173, 0.1);
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary-blue);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background: var(--secondary-blue);
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+}
 
 .btn-voltar {
-  margin-top: 0.75rem;
-  background: #636e72;
+  background: transparent;
+  color: #7f8c8d;
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
 
-.mensagem-erro {
-  margin: 1rem 0;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  background: #ffe9e9;
-  color: #b33939;
-  border: 1px solid #ffc7c7;
+.btn-voltar:hover {
+  background: #f8f9fa;
+  color: var(--text-dark);
 }
 
-.fade-in { animation: fadeIn 0.5s ease-in; }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.erro, .mensagem-erro {
+  color: var(--error);
+  font-size: 0.85rem;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#area-certificado {
+  background: #f8fbff;
+  border: 2px dashed var(--primary-blue);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}

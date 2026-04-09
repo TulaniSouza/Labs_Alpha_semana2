@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import logo from './assets/Logo.jpeg';
 import Inscricao from './components/Inscricao';
 import Pagamento from './components/Pagamento';
 import Certificado from './components/Certificado';
@@ -17,6 +18,7 @@ function App() {
   return (
     <section className="app-wrapper">
       <header>
+        <img src={logo} alt="Logo Labs Alpha" style={{ width: '80px', marginBottom: '10px' }} />
         <h1>Labs Alpha - Gestão de Eventos</h1>
       </header>
 
