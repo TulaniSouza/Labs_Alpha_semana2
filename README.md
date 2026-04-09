@@ -21,11 +21,11 @@ A seguir, estão definidas as permissões de acesso com base nos perfis do siste
 
 
 ## 📚 Documentação Técnica
-- [01 - Visão Geral](./docs/01-visao-geral.md)
-- [02 - Requisitos](./docs/02-requisitos.md)
-- [03 - Fluxos de Processo](./docs/03-fluxos.md)
-- [04 - Matriz de Permissões (RBAC)](./docs/04-permissoes.md)
-- [05 - Análise de Riscos e Segurança](./docs/05-riscos.md)
+- [01 - Visão Geral](./Labs_Alpha_semana2/docs/01-visao-geral.md)
+- [02 - Requisitos](./Labs_Alpha_semana2/docs/02-requisitos.md)
+- [03 - Fluxos de Processo](./Labs_Alpha_semana2/docs/03-fluxos.md)
+- [04 - Matriz de Permissões (RBAC)](./Labs_Alpha_semana2/docs/04-permissoes.md)
+- [05 - Análise de Riscos e Segurança](./Labs_Alpha_semana2/docs/05-riscos.md)
 
 
 ## Equipe e Funções
